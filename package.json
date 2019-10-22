@@ -1,0 +1,25 @@
+{
+  "name": "parcel-bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.6.5",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.0",
+    "spuit": "^0.1.2"
+  },
+  "scripts": {
+    "dev": "yarn clean && parcel ./src/index.html --out-file ./dist/index.html -p 8888 --open",
+    "scss": "yarn clean && parcel ./src/stylesheets/styles.scss",
+    "build": "yarn clean && parcel build ./src/index.html",
+    "clean": "rm -r dist/ .cache/"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "1.9.1 - 3",
+    "popper.js": "^1.14.7"
+  }
+}
